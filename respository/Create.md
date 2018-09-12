@@ -12,11 +12,15 @@ __3. 新建仓库__
   * 还需要一个snapshot用来保存快照的私仓。    
   * 最后，这些私仓需要一个统一的访问入口，就是私仓组。    
 &nbsp;    
-__3.1. proxy repository__    
+__3.1. Proxy repository__    
     在Repository Tab点击【Add】->【Proxy Repository】    
     使用的外部私仓是阿里的仓库http://maven.aliyun.com/nexus/content/groups/public    
   ![proxy_repository](https://github.com/zhang-jh/nexus_maven_service/blob/master/images/proxy_repository.png)    
 &nbsp;    
-__3.2. release repository__    
-    注意红框部分设置，release版本不让重复发布版本，要在这里设置成【Disable Redeploy】，这样release版本的发布就只能上传一次了。
-    
+__3.2. Releases repository__    
+    在Repository Tab点击【Add】->【Hosted Repository】    
+    注意红框部分设置，release版本不让重复发布版本，要在这里设置成【Disable Redeploy】，这样release版本的发布就只能上传一次了。    
+  ![release_repository](https://github.com/zhang-jh/nexus_maven_service/blob/master/images/releases_repository.png)    
+  &nbsp;    
+__3.3. Snapshots repository__    
+
