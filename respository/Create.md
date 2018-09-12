@@ -14,8 +14,8 @@ __3. 新建仓库__
 &nbsp;    
 __3.1. proxy repository__    
     在Repository Tab点击【Add】->【Proxy Repository】    
-    使用的外部私仓是阿里的仓库http://maven.aliyun.com/nexus/content/groups/public：    
-[proxy_repository]: https://github.com/zhang-jh/nexus_maven_service/blob/master/images/proxy_repository.png 
-![proxy_repository]    
+    使用的外部私仓是阿里的仓库http://maven.aliyun.com/nexus/content/groups/public    
+  ![proxy_repository](https://github.com/zhang-jh/nexus_maven_service/blob/master/images/proxy_repository.png)    
 &nbsp;    
 __3.2. release repository__    
+    
