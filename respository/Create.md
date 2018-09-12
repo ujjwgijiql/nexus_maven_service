@@ -18,4 +18,5 @@ __3.1. proxy repository__
   ![proxy_repository](https://github.com/zhang-jh/nexus_maven_service/blob/master/images/proxy_repository.png)    
 &nbsp;    
 __3.2. release repository__    
+    注意红框部分设置，release版本不让重复发布版本，要在这里设置成【Disable Redeploy】，这样release版本的发布就只能上传一次了。
     
