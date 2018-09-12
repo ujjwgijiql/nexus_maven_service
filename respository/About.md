@@ -6,14 +6,19 @@
 1、自己maven私服更容易维护，公司开发从maven私服迁出jar到本地仓库更快    
 2、有些公司未开放外网给开发人员   
 &nbsp;   
-## respository Type
+## Respository Type    
 * proxy：是远程仓库的代理。最典型的就是Maven官方中央仓库、JBoss仓库等等。    
          比如说在nexus中配置了一个central repository的proxy，当用户向这个proxy请求一个artifact，这个proxy就会先在本地查找，如果找不到的话，就会从远程仓库下载，然后返回给用户，相当于起到一个中转的作用；
 * Hosted：是宿主仓库，用户可以把自己的一些构件，deploy到hosted中，也可以手工上传构件到hosted里。    
          用来发布一些第三方不允许的组件，比如说oracle的驱动程序，ojdbc6.jar，商业软件jar包，在central repository是获取不到的，就需要手工上传到hosted里；
 * Group：是仓库组，在maven里没有这个概念，是nexus特有的。    
         目的是将上述多个仓库聚合，对用户暴露统一的地址，这样用户就不需要在pom中配置多个地址，只要统一配置group的地址就可以了右边那个Repository Path可以点击进去，看到仓库中artifact列表。不过要注意浏览器缓存。    
-
-
-
+&nbsp;   
+## Respository    
+* releases： 内部的模块中release模块的发布仓库    
+* snapshots：发布内部的SNAPSHOT模块的仓库    
+* 3rd party：第三方依赖的仓库，这个数据通常是由内部人员自行下载之后发布上去    
+* central：  proxy类型的仓库，从远程中央仓库中寻找数据的仓库    
+* Apache Snapshots：proxy类型的仓库，从远程中央仓库中寻找数据的仓库    
+* Public Repositories：group类型的仓库，组仓库用来方便我们开发人员进行设置的仓库    
 
